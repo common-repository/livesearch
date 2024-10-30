@@ -1,0 +1,84 @@
+/*
+ Style sheet for LiveSearch plugin
+ Feel free to modify any/all colors and layouts,
+  but preserve the class names and id's
+*/
+
+.LSRow small, #searchcontrols small {
+	color: #515151;
+}
+
+#LSHighlight small {
+	color: #515151;
+}
+
+#LSResult {
+	position: absolute;
+	right: 17em;
+	background-color: rgb(255, 255, 255);
+	width: 17em;
+	margin: -2em 0 0 0;
+	font: 90% 'Lucida Grande', Arial, Sans-Serif;
+	padding: 0 0 0.7em 0;
+	border: 1px solid #999999;
+	z-index: 100;
+}
+
+* html #LSResult {
+	margin: 0em 0 0 0.1em;
+}
+
+#LSResult:hover #LSHighlight {
+	background-color: rgb(255, 255, 255);
+	border-color: rgb(255, 255, 255);
+}
+
+.LSRow {
+	text-align: left;
+	padding: 0.3em 1em 0.3em;
+	border-top: 2px solid rgb(255, 255, 255);
+	border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+#LSHighlight, .LSRow:hover {
+	background-color: rgb(33, 50, 66); /* #e8dfba; */
+	border-top: 2px solid rgb(100,130,160); /*#e3d7a2;*/
+	border-bottom: 2px solid rgb(100,130,160); /*#e3d7a2;*/
+}
+
+#LSHighlight a, .LSRow:hover a {
+	color: rgb(195,196,210);
+}
+
+.LSRow a {
+	color: rgb(61,92,122); /* #7a6616; */
+	font-weight: normal;
+}
+
+.LSRow a:hover {
+	color: rgb(193,102,90); /* #53460d; */
+	font-weight: normal;
+}
+
+#searchcontrols {
+	padding: 0.3em;
+	height: 1em;
+}
+
+#searchcontrols .alignright {
+  float: right;
+  text-align: right;
+  width: 49%;
+}
+	
+#searchcontrols .alignleft {
+  float: left;
+  width: 49%;
+}
+
+.oddresult {
+	background-color: rgb(117,144,174); /* #e8dfba; */
+	border-color: rgb(117,144,174); /* #e8dfba; */
+}
+
+/* End LiveSearch */
